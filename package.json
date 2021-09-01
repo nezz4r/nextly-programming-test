@@ -1,0 +1,14 @@
+{
+  "name": "nextly-programming-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/nezz4r/nextly-programming-test.git",
+  "author": "Raul Victor Queiroz <raulvictor00@outlook.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^27.1.0"
+  }
+}
