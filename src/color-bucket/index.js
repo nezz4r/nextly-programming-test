@@ -28,10 +28,7 @@ class Matrix {
   }
 
   get(pos) {
-    if (this.validatePosition(pos) === true) {
-      // console.log(this.validatePosition(pos));
-      return this.matrix[pos[0]][pos[1]].value;
-    } else throw new Error(this.validatePosition(pos));
+    return this.matrix[pos[0]][pos[1]].value;
   }
 
   validatePosition(pos) {
@@ -39,7 +36,7 @@ class Matrix {
       return `Invalid position, row index should be between 0 and ${this.rows}`;
     }
     if (pos[1] > this.cols || pos[1] < 0) {
-      return `Invalid position, col index should be between 0 and ${this.cols}`;
+      return `Invalid position, column index should be between 0 and ${this.cols}`;
     }
     return true;
   }
@@ -69,12 +66,13 @@ class Matrix {
       crossPositions,
       initialValue
     );
-
-    validCrossPositions.forEach((pos) => {
-      if (this.get(pos) == initialValue) {
-        this.paint(pos, value);
-      }
-    });
+    if (validCrossPositions.length > 0) {
+      validCrossPositions.forEach((pos) => {
+        if (this.get(pos) == initialValue) {
+          this.paint(pos, value);
+        }
+      });
+    }
     return this;
   }
 }
