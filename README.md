@@ -1,5 +1,9 @@
 # Nextly Programming Test
 
+## About
+
+### Challenges source code are located in /src/ folder, tests are located in /\_\_tests\_\_/ folder. These include test cases, but you're welcome to try your own.
+
 ## Requirements
 
 - Node v15.0.1 or greater

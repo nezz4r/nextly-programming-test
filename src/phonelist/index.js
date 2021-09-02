@@ -1,3 +1,5 @@
+// Raul Victor Aquino de Queiroz
+
 function quickSearch(string, array) {
   if (!Array.isArray(array)) {
     throw new Error('Input must be an array');

@@ -1,3 +1,5 @@
+// Raul Victor Aquino de Queiroz
+
 function isPalindrome(word) {
   const formattedWord = word.toLowerCase().split(' ').join('');
   const a = [...formattedWord];

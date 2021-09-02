@@ -1,3 +1,5 @@
+// Raul Victor Aquino de Queiroz
+
 class Matrix {
   constructor(input) {
     if (input.length < 1) {
