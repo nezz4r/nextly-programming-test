@@ -6,7 +6,9 @@
   "author": "Raul Victor Queiroz <raulvictor00@outlook.com>",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose"
   },
   "dependencies": {
     "jest": "^27.1.0"
